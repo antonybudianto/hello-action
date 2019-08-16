@@ -31,7 +31,7 @@ async function run() {
     // core.debug(`Hello ${myInput}`);
     //read contents of action's event.json
     const eventData = await helpers.readFilePromise(
-      ".." + process.env.GITHUB_EVENT_PATH
+      "../.." + process.env.GITHUB_EVENT_PATH
     );
     const eventJSON = JSON.parse(eventData);
 
